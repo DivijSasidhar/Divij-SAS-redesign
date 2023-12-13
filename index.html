@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>My Page for Divij Sasidhar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/sas.css" type="text/css">
+<script language="JavaScript" type="text/javascript">
+  function turnOn(obj) { obj.className = obj.className.replace('off', 'on'); }
+  function turnOff(obj) { obj.className = obj.className.replace('on', 'off'); }
+</script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="/scripts/placeholders.min.js"></script>
+</head>
+<body>
+    <div class="header">
+      <a href="/mypage.pdx"><img src="/images/sas-online.gif" style="border-radius: 2px" onMouseOver="excite(this)" onMouseLeave="normal(this)"></a>
+        <!---thinking about adding person image here-->
+      <div class="dropdown">
+        <button id="username-dropdown">Divij Sasidhar</button>
+          <div class="dropdown-content">
+            <a href="#">View Profile</a>
+            <a href="#">View Your Photos</a>
+            <a href="#">View Transcript</a>
+            <a href="/logout.pdx">Log Out</a>
+        </div>
+        <script> 
+        var buttonWidth = document.getElementById('username-dropdown').offsetWidth; 
+        document.getElementsByClassName('dropdown-content')[0].style.width = buttonWidth + "px";
+        </script>
+      </div>
+    </div>
+<table width=100% border="0">
+<tr valign=top><td>
+<script type="text/javascript" src="/dgtools.js"></script>
+<script type="text/javascript" src="/tabber-cookie.js"></script>
+<script type="text/javascript" src="/tabber.js"></script>
+<div class="tabber" id="individualtabs">
+<div class="tabbertab">
+<h3>Scheduling</h3><BR>
+<div class="indent-text"><b>Schedule change requests</b> are now over.  The Add/Drop process begins on the first day of classes.</div><br>
+<input type="submit" name="Show-Sched-Forms" class="blueboxoff" value="Show Schedule Forms" onMouseOver="turnOn(this);" onMouseOut="turnOff(this);">
+<input type="submit" name="Master-Schedule" class="blueboxoff" value="Show Schedule of Courses" onMouseOver="turnOn(this);" onMouseOut="turnOff(this);">
+<input type="button" name="Course-Catalog" class="blueboxoff" value="Show Course Catalog" onMouseOver="turnOn(this);" onMouseOut="turnOff(this);" onClick="window.open('https://docs.google.com/document/d/1i2WYJ6tjB9T4MTXZ9ww4_LPci32gKB2JcfTSgRkaUtM/edit')">
+
+<br>
+</div>
+<div class="tabbertab">
+<h3>Other Functions</h3><BR>
+<FORM NAME="otherfunctions" METHOD=POST ACTION="/other-functions.pdx?JNDJWVXHTRBVHXYNVZWVQPCBYYBGYH">
+<span class="sectionheader">Miscellaneous SAS Functions</span><br>
+<input type="submit" name="View-Grade-Photos" class="blueboxoff" value="View a Grade's Photos" onMouseOver="turnOn(this);" onMouseOut="turnOff(this);">
+<br><br>
+</form>
+</div>
+</div>
+
+</td></tr></table>
+<p>I was thinking to show the student's schedule on the page directly (right here probably), since that's what most people use SAS for.</p>
+<p>The other functions of SAS can go below. Also, correct me if I'm wrong, but isn't there a tagging system being implemented in the SAS
+  photo server? I think it could be nice to view the photos you're tagged in.
+</p>
+<p>There's still some more cleaning up to do with the font and spacing, and I wanted to put the student's image right next to the name but I couldn't figure it out.
+  I tried everything I could think of and got close but nothing aligned all the elements properly and made it look clean enough.
+</p>
+<p>When it comes to coloring and theme and fonts, I'm pretty much stealing from Hawknet right now. The colors look a little weird right now,
+  but I'll figure something out to make it more natural. Hawknet has so many different colored containers that it looks strange if I just rip the colors and put them on a site with only a handful of layers/containers.
+</p>
+<span class="footer"
+  ><i
+    >Entire system written by
+    <a href="mailto:dgill@hawken.edu" class="footer"
+      >David Gillespie</a
+    >
+    and &copy; 1997-2023 Hawken School, except<br />
+    JavaScript tabbifier &copy; 2006 and Filter Select &copy; 2003
+    <a href="http://www.barelyfitz.com/" class="footer"
+      >Patrick Fitzgerald</a
+    >, and used under license.</i
+  ></span
+>
+</body></html>
