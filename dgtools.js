@@ -6,8 +6,7 @@ function turnOff(obj) {
 	obj.className = obj.className.replace('on', 'off');
 }
 
-/*
-
+/** :)
 function excite(obj) { 
 	obj.src = "/images/divij-sas-online.gif"
 }
@@ -15,8 +14,11 @@ function excite(obj) {
 function normal(obj) { 
 	obj.src = "/images/sas-online.gif"
 }
+**/
 
-*/
+function condensetable() {
+	console.log("clicked")
+}
 
 function hidediv(id) {
 	//safe function to hide an element with a specified id
