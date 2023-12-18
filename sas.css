@@ -32,7 +32,6 @@ body {
     background-color: #e8e8e8;
     color: #000099;
     overflow-x: hidden;
-    overflow: hidden;
 }
   
   .smalltext {
@@ -46,8 +45,9 @@ body {
   }
   
   .footer i {
-    bottom: 1rem;
-    position: fixed;
+    top: 100%;
+    bottom: 0%;
+    display: block;
     color: #999;
     font-size: 10px;
   }
@@ -130,6 +130,101 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  /** came from https://codepen.io/faaezahmd/pen/dJeRex **/
+  .container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+    small {
+      font-size: 0.5em;
+    }
+  }
+  
+  .responsive-table {
+    li {
+      color: black;
+      border-radius: 4px;
+      padding: 25px 40px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      border: 1.4px solid black;
+      border-radius: 4px;
+      box-shadow: 4px 2px 9px 2px rgba(0,0,0,0.15);
+
+    }
+    .table-header {
+      background-color: #95A5A6;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      box-shadow: 4px 2px 9px 2px rgba(0,0,0,0.15);
+      border: 1px solid black;
+    }
+    .table-row {
+      background-color: #fafafa;
+      box-shadow: 4px 2px 9px 2px rgba(0,0,0,0.15);
+      border: 1px solid black;
+      border-radius: 4px;
+    }
+    .table-row:hover {
+      box-shadow: 4px 2px 9px 2px rgba(0,0,0,0.20);
+    }
+    .col-1 {
+      flex-basis: 7%;
+    }
+    .col-2 {
+      flex-basis: 40%;
+    }
+    .col-3 {
+      flex-basis: 40%;
+    }
+    .col-4 {
+      flex-basis: 5%;
+    }
+    .col-5 {
+      flex-basis: 5%;
+    }
+    
+    @media all and (max-width: 767px) {
+      .table-header {
+        display: none;
+      }
+      .table-row{
+        
+      }
+      li {
+        display: block;
+      }
+      .col {
+        
+        flex-basis: 100%;
+        
+      }
+      .col {
+        display: flex;
+        padding: 10px 0;
+        &:before {
+          color: #6C7A89;
+          padding-right: 10px;
+          content: attr(data-label);
+          flex-basis: 50%;
+          text-align: right;
+        }
+      }
+    }
+  }
+
 /* end of divij code :D */
 
   .gridnone,
