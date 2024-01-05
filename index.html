@@ -118,6 +118,18 @@
     </li>
   </ul>
 </div>
+<script>
+function transitions() {
+	const labels = document.querySelectorAll("li.table-row")
+	var i = 0.8;
+	labels.forEach(label => {
+		label.style.transitionDuration = i + "s";
+		i -= 0.03;
+	})
+}
+
+  transitions();
+  </script>
 
 <p>I was thinking to show the student's schedule on the page directly (right here probably), since that's what most people use SAS for.</p>
 <p>The other functions of SAS can go below. Also, correct me if I'm wrong, but isn't there a tagging system being implemented in the SAS

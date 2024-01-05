@@ -17,7 +17,26 @@ function normal(obj) {
 **/
 
 function condensetable() {
-	console.log("clicked")
+	var rows = document.querySelectorAll('li.table-row')
+	if (rows[0].className != "table-row hidden") {
+		var percentage = 95;
+		for (let i = 0; i < rows.length; i++) {
+			rows[i].style.transform = "translateY(-" + ((percentage)) + "%)"
+			rows[i].style.zIndex = -i;
+			rows[i].style.maxheight = '0';
+			percentage += 110;
+			rows[i].classList.add('hidden');
+
+		}
+	}
+	else {
+		var rows = document.querySelectorAll('li.table-row.hidden')
+		for (let i = 0; i < rows.length; i++) {
+			rows[i].style.transform = ""
+			rows[i].style.maxheight = '30';
+			rows[i].classList.remove('hidden');
+		}
+	}
 }
 
 function hidediv(id) {
